@@ -73,8 +73,8 @@ function initMotion(animateIntro = true) {
       intro.from('.hero-kicker', { y: 15, opacity: 0, duration: .8 })
         .from('.line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
         .from('.hero-intro', { y: 24, opacity: 0, duration: .9 }, .5)
-        .from('.hero-art', { clipPath: 'inset(0 0 0 100%)', duration: 1.4, ease: 'power4.inOut' }, .1)
-        .from('.hero-art img', { scale: 1.18, duration: 1.8 }, .1)
+        .from('.hero-art', { y: 45, scale: .9, opacity: 0, rotation: 6, duration: 1.4 }, .3)
+        .from('.hero-art img', { scale: 1.15, duration: 1.8 }, .3)
         .from('.hero-bottom', { y: 10, opacity: 0, duration: .8 }, .8);
     }
     gsap.to('.scroll-progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .4 } });
