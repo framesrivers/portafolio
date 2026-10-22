@@ -128,8 +128,6 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
 .crm-visual{background:#738da9}
 .crm-visual .project-number{color:#fff;opacity:.85}
 .project-number{position:absolute;left:24px;bottom:16px;font-size:16px;font-weight:600;letter-spacing:.06em;color:var(--ink);opacity:.55}
-.explore-bubble{position:absolute;bottom:20px;right:20px;border-radius:50%;width:88px;height:88px;display:grid;place-items:center;color:#fff;background:var(--red);font-size:16px;transform:scale(.7) rotate(-20deg);opacity:0;transition:transform .7s var(--ease),opacity .4s var(--ease);box-shadow:inset 0 0 0 1px #ffffff20}
-.project-visual:hover .explore-bubble,.project-visual:focus-visible .explore-bubble{opacity:1;transform:none}
 .project-heading{display:flex;justify-content:space-between;align-items:center;margin-top:25px}
 .project-type{font-size:16px;font-weight:600;letter-spacing:.08em;color:var(--red);margin-bottom:9px}
 .project-heading h3{font-size:31px;letter-spacing:-.055em}
@@ -307,8 +305,7 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
   .project-heading h3{font-size:28px}
   .project-summary{font-size:16px}
   .circle-link{width:44px;height:44px}
-  .explore-bubble{display:none}
-  .approach-header h2{font-size:clamp(29px,7.1vw,46px);line-height:1.25;margin-top:23px}
+    .approach-header h2{font-size:clamp(29px,7.1vw,46px);line-height:1.25;margin-top:23px}
   .inline-photo{width:50px;height:25px;margin-inline:2px}
   .context-grid{margin-top:0;grid-template-columns:1fr;grid-template-rows:auto}
   .notes-shell{grid-row:auto}
