@@ -11,26 +11,6 @@ document.querySelector('.menu-close').addEventListener('click', () => mobileMenu
 mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.close()));
 mobileMenu.addEventListener('close', () => { document.body.classList.remove('dialog-open'); menuButton.setAttribute('aria-expanded', 'false'); });
 
-const notes = [
-  { title: 'Start with a person.<br>Then open Figma.', description: 'Interviews, market research, and usability testing bring the real problem into focus before the interface takes shape.' },
-  { title: 'Make it.<br>Watch. Make it better.', description: 'Prototypes turn assumptions into something people can actually use. Watching where they pause tells me what needs another pass.' },
-  { title: 'The handoff isn’t<br>the finish line.', description: 'Good collaboration continues through specifications, implementation review, and the details that make a design work in the real product.' }
-];
-let noteIndex = 0;
-let noteAnimating = false;
-function changeNote(direction) {
-  if (noteAnimating) return;
-  noteIndex = (noteIndex + direction + notes.length) % notes.length;
-  const update = () => { document.querySelector('#note-title').innerHTML = notes[noteIndex].title; document.querySelector('#note-description').textContent = notes[noteIndex].description; document.querySelector('.note-count').textContent = `0${noteIndex + 1} / 03`; };
-  const target = document.querySelector('.note-content');
-  if (motionEnabled && window.gsap) {
-    noteAnimating = true;
-    gsap.to(target, { opacity: 0, y: -10, duration: .2, onComplete: () => { update(); gsap.fromTo(target, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: .45, ease: 'power3.out', onComplete: () => { noteAnimating = false; } }); } });
-  } else update();
-}
-document.querySelector('#prev-note').addEventListener('click', () => changeNote(-1));
-document.querySelector('#next-note').addEventListener('click', () => changeNote(1));
-
 const email = 'hola@marcosrios.com';
 const copyButton = document.querySelector('#copy-email');
 const copyStatus = document.querySelector('#copy-status');
@@ -81,7 +61,6 @@ function initMotion(animateIntro = true) {
         .to(visual, { scale: 1, opacity: 1, duration: .4 })
         .to(visual, { scale: .98, opacity: .25, duration: .25, ease: 'none' });
     });
-    reveal('.context-shell', '.context-grid', { stagger: .1 });
     reveal('.frontera-copy');
     reveal('.frontera-photo', null, { rotation: -4, duration: 1.2 });
     reveal('.about-copy');

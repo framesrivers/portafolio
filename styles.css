@@ -126,35 +126,6 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
 .text-link{display:inline-flex;align-items:center;gap:16px;font-size:16px;font-weight:500;margin-top:24px}
 .text-link .round-icon{width:30px;height:30px;font-size:16px}
 
-/* Approach — blue site's card grid, red notes card */
-.approach-section{padding-block:var(--space-section);background:#ece7dd}
-.approach-header .eyebrow{color:var(--red-deep)}
-.approach-header h2{font-size:clamp(38px,4.6vw,73px);line-height:1.17;letter-spacing:-.06em;margin-top:30px}
-.inline-photo{display:inline-block;width:95px;height:47px;vertical-align:middle;border-radius:40px;overflow:hidden;margin-inline:5px;transform:rotate(-7deg)}
-.inline-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
-.context-grid{margin-top:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.context-shell{padding:5px;background:#e2dbcf;border-radius:24px;box-shadow:inset 0 0 0 1px #faf7f1}
-.context-card,.notes-card{height:100%;border-radius:19px;padding:30px;position:relative;overflow:hidden}
-.notes-card{background:var(--red) url("assets/red-pattern.webp") top left/auto repeat;color:#fff;display:flex;flex-direction:column;padding:32px;min-height:440px}
-.notes-top{display:flex;align-items:center;justify-content:space-between;font-size:16px;letter-spacing:.08em}
-.asterisk{font-size:52px;font-weight:400;line-height:1;opacity:.75}
-.note-content{margin-top:auto;padding-top:40px;padding-bottom:40px}
-.note-count{font-size:16px;letter-spacing:.04em;opacity:.75}
-.note-content h3{font-size:clamp(30px,2.8vw,40px);letter-spacing:-.055em;line-height:1.12;margin-top:20px}
-.note-content p{font-size:17px;line-height:1.7;color:#ffe9e3;max-width:400px;margin-top:24px}
-.notes-bottom{display:flex;align-items:center;justify-content:flex-end;gap:16px;font-size:16px;color:#ffe9e3}
-.carousel-controls{display:flex;gap:8px}
-.carousel-controls button{border-radius:50%;background:#ffffff1a;box-shadow:inset 0 0 0 1px #ffffff40;width:44px;height:44px;font-size:19px;color:#fff;transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease)}
-.carousel-controls button:hover{background:#fff;color:var(--red);transform:scale(1.07)}
-.notes-card button:focus-visible{outline-color:#fff}
-.card-kicker{font-size:16px;letter-spacing:.08em;color:#6b665d;font-weight:500}
-.craft-card{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:32px}
-.craft-flow{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-block:30px 24px;color:#6e5a43}
-.craft-flow span{padding:8px 16px;box-shadow:inset 0 0 0 1px #c9b9a0;border-radius:100px;font-size:16px}
-.craft-flow i{font-style:normal;font-size:20px}
-.craft-card h3{font-size:26px;letter-spacing:-.05em}
-.craft-card>p:last-child{font-size:17px;line-height:1.6;color:#6e5a43;margin-top:12px;max-width:440px}
-
 /* Frontera — red texture, editorial split */
 .frontera-section{padding-block:var(--space-section)}
 .frontera-inner{display:grid;grid-template-columns:1fr minmax(256px,400px);gap:64px;align-items:center}
@@ -219,10 +190,6 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
   .work-section{gap:48px}
   .work-sidebar h2{font-size:36px}
   .project-heading h3{font-size:28px}
-  .notes-card{padding:28px}
-  .context-card{padding:25px}
-  .craft-flow{gap:11px}
-  .craft-flow span{padding:8px 12px}
   .about-section{gap:48px}
 }
 @media(max-width:850px){
@@ -240,11 +207,6 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
   .project-heading h3{font-size:24px}
   .project-summary{font-size:16px}
   .frontera-inner{grid-template-columns:1fr 38%;gap:40px}
-  .approach-header h2{font-size:43px}
-  .inline-photo{width:65px;height:33px}
-  .craft-flow{gap:7px;flex-wrap:wrap}
-  .craft-flow span{padding:8px 12px}
-  .craft-card h3{font-size:23px}
   .about-copy h2{font-size:35px}
   .about-copy p.about-lead{font-size:18px}
   .about-copy p:not(.eyebrow){font-size:16px}
@@ -279,15 +241,6 @@ h1{font-size:clamp(58px,6.6vw,108px);font-weight:500;letter-spacing:-.075em;line
   .project-heading{margin-top:19px}
   .project-heading h3{font-size:28px}
   .project-summary{font-size:16px}
-    .approach-header h2{font-size:clamp(29px,7.1vw,46px);line-height:1.25;margin-top:23px}
-  .inline-photo{width:50px;height:25px;margin-inline:2px}
-  .context-grid{grid-template-columns:1fr}
-  .notes-card{min-height:400px;padding:24px}
-  .note-content{padding-top:32px;padding-bottom:32px}
-  .note-content h3{font-size:32px}
-  .context-card{padding:27px}
-  .craft-flow{gap:12px;margin-block:32px}
-  .craft-card>p:last-child{font-size:16px}
   .frontera-inner{grid-template-columns:1fr;gap:56px}
   .frontera-photo{max-width:320px;width:86%;margin-inline:auto}
   .frontera-copy h2{font-size:clamp(30px,8.4vw,40px)}
