@@ -50,7 +50,7 @@ function initMotion(animateIntro = true) {
   motionContext = gsap.context(() => {
     if (animateIntro) {
       const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
-      intro.from('.line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
+      intro.from('.hero .line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
         .from('.hero-intro', { y: 24, opacity: 0, duration: .9 }, .5);
     }
     gsap.to('.scroll-progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .4 } });
@@ -65,7 +65,7 @@ function initMotion(animateIntro = true) {
     reveal('.frontera-photo', null, { rotation: -4, duration: 1.2 });
     reveal('.about-copy');
     reveal('.map-shell', null, { rotation: -3, duration: 1.2 });
-    gsap.from('.contact-main h2', { y: 50, opacity: 0, duration: 1.2, ease: 'power3.out', scrollTrigger: { trigger: '.contact-section', start: 'top 80%', once: true } });
+    gsap.from('.contact-main .line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12, ease: 'power3.out', scrollTrigger: { trigger: '.contact-section', start: 'top 80%', once: true } });
   });
   motionMedia = gsap.matchMedia();
   motionMedia.add('(min-width: 851px)', () => {
