@@ -72,10 +72,7 @@ function initMotion(animateIntro = true) {
       const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
       intro.from('.hero-kicker', { y: 15, opacity: 0, duration: .8 })
         .from('.line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
-        .from('.hero-intro', { y: 24, opacity: 0, duration: .9 }, .5)
-        .from('.hero-art', { y: 45, scale: .9, opacity: 0, rotation: 6, duration: 1.4 }, .3)
-        .from('.hero-art img', { scale: 1.15, duration: 1.8 }, .3)
-        .from('.hero-bottom', { y: 10, opacity: 0, duration: .8 }, .8);
+        .from('.hero-intro', { y: 24, opacity: 0, duration: .9 }, .5);
     }
     gsap.to('.scroll-progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .4 } });
     marqueeTween = gsap.to('.marquee-track', { xPercent: -33.333333, duration: 32, ease: 'none', repeat: -1 });
@@ -96,7 +93,6 @@ function initMotion(animateIntro = true) {
   motionMedia.add('(min-width: 851px)', () => {
     const sidebar = document.querySelector('.work-sidebar');
     ScrollTrigger.create({ trigger: sidebar, start: 'top 130px', end: () => '+=' + Math.max(0, document.querySelector('.project-gallery').offsetHeight - sidebar.offsetHeight), pin: sidebar, pinSpacing: false, invalidateOnRefresh: true });
-    gsap.to('.hero-art img', { yPercent: -8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.2 } });
     gsap.to('.hero-copy', { y: 70, opacity: .35, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.2 } });
     gsap.fromTo('.frontera-photo', { yPercent: 8 }, { yPercent: -8, ease: 'none', scrollTrigger: { trigger: '.frontera-section', start: 'top bottom', end: 'bottom top', scrub: 1.2 } });
   });
