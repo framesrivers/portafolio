@@ -70,8 +70,7 @@ function initMotion(animateIntro = true) {
   motionContext = gsap.context(() => {
     if (animateIntro) {
       const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
-      intro.from('.hero-kicker', { y: 15, opacity: 0, duration: .8 })
-        .from('.line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
+      intro.from('.line > span', { yPercent: 110, opacity: 0, duration: 1.15, stagger: .12 }, .12)
         .from('.hero-intro', { y: 24, opacity: 0, duration: .9 }, .5);
     }
     gsap.to('.scroll-progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .4 } });
