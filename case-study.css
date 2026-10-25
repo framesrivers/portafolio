@@ -28,8 +28,8 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
 
 /* Header — logo tile and floating nav island */
 #root .linos-template-page .case-study-header{position:absolute;top:0;left:0;right:0;z-index:20;background:transparent;min-height:0;padding:32px var(--gutter)}
-#root .case-study-header .wordmark img{width:52px;height:52px;object-fit:contain;padding:11px;background:var(--paper);border-radius:16px;box-shadow:0 8px 24px #5a0d0a33}
-#root .linos-template-page .case-study-nav{position:fixed;top:27px;left:50%;transform:translateX(-50%);display:flex;flex-direction:row;align-items:center;gap:28px;padding:9px 9px 9px 28px;border-radius:100px;background:#fdfbf6c7;color:var(--ink);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:inset 0 0 0 1px #fff9,0 4px 24px #1d1c1a0d;border:0;margin:0;right:auto;width:auto}
+#root .case-study-header .wordmark img{width:52px;height:52px;object-fit:contain;padding:11px;background:var(--paper);border-radius:16px;box-shadow:0 2px 8px #5a0d0a14}
+#root .linos-template-page .case-study-nav{position:fixed;top:27px;left:50%;transform:translateX(-50%);display:flex;flex-direction:row;align-items:center;gap:28px;padding:9px 9px 9px 28px;border-radius:100px;background:#fdfbf6;color:var(--ink);border:1px solid #ddd5c8;box-shadow:0 2px 8px #1d1c1a0f;margin:0;right:auto;width:auto}
 #root .linos-template-page .case-study-nav a{min-height:0;padding:0;font-size:16px;font-weight:400;letter-spacing:0;transition:color .4s var(--ease)}
 #root .linos-template-page .case-study-nav a:hover{color:var(--red);background:none;transform:none}
 /* Sentence-case labels like the homepage nav (the built markup is uppercase) */
