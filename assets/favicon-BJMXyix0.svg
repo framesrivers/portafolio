@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 40" role="img" aria-labelledby="title">
-  <title>MR</title>
-  <rect width="16" height="40" rx="8" fill="#ff5c62"/>
-  <rect x="16" width="16" height="40" rx="8" fill="#ff5c62"/>
-  <rect x="32" width="16" height="40" rx="8" fill="#454343"/>
-  <rect x="48" width="16" height="26" rx="8" fill="#454343"/>
-</svg>

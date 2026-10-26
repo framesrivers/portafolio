@@ -20,6 +20,7 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
 #root .linos-template-page :is(h1,h2,h3,h4,strong,b){font-weight:500}
 #root .linos-template-page{--linos-weight-body:400;--linos-weight-meta:500;--linos-weight-subhead:500;--linos-weight-display:500;--linos-image-surface:#ebe6dc;background:var(--paper)}
 #root .linos-template-page :is(a,button):focus-visible{outline:3px solid var(--red);outline-offset:6px}
+#root .case-study-header .wordmark:focus-visible,#root .linos-template-hero a:focus-visible,#root .linos-template-next-case a:focus-visible{outline-color:var(--paper)}
 ::selection{background:var(--red);color:#fff}
 .case-progress{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:0 50%;z-index:60}
 
@@ -29,8 +30,8 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
 /* Header — logo tile and floating nav island */
 #root .linos-template-page .case-study-header{position:absolute;top:0;left:0;right:0;z-index:20;background:transparent;min-height:0;padding:32px var(--gutter)}
 #root .case-study-header .wordmark img{width:52px;height:52px;object-fit:contain;padding:11px;background:var(--paper);border-radius:16px;box-shadow:0 2px 8px #5a0d0a14}
-#root .linos-template-page .case-study-nav{position:fixed;top:27px;left:50%;transform:translateX(-50%);display:flex;flex-direction:row;align-items:center;gap:28px;padding:9px 9px 9px 28px;border-radius:100px;background:#fdfbf6;color:var(--ink);border:1px solid #ddd5c8;box-shadow:0 2px 8px #1d1c1a0f;margin:0;right:auto;width:auto}
-#root .linos-template-page .case-study-nav a{min-height:0;padding:0;font-size:16px;font-weight:400;letter-spacing:0;transition:color .4s var(--ease)}
+#root .linos-template-page .case-study-nav{position:fixed;top:27px;left:50%;transform:translateX(-50%);display:flex;flex-direction:row;align-items:center;gap:28px;padding:4px 4px 4px 28px;border-radius:100px;background:#fdfbf6;color:var(--ink);border:1px solid #ddd5c8;box-shadow:0 2px 8px #1d1c1a0f;margin:0;right:auto;width:auto}
+#root .linos-template-page .case-study-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0;font-size:16px;font-weight:400;letter-spacing:0;transition:color .4s var(--ease)}
 #root .linos-template-page .case-study-nav a:hover{color:var(--red);background:none;transform:none}
 /* Sentence-case labels like the homepage nav (the built markup is uppercase) */
 #root .linos-template-page .case-study-nav a{font-size:0}
